@@ -1,52 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Card game</title>
+<html lang="ru">
 
-    </head>
-    <body class="body">
-        <div class="top">
-            <div class="menu">
-                <form>
-                    <p class="title">Выберите сложность</p>
-                    <div class="radio-buttons">
-                        <input
-                        type="radio"
-                        id="easy"
-                        name="level"
-                        value="1"
-                        class="lvl-input"
-                        />
-                        <label for="easy">1</label>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
 
-                        <input
-                        type="radio"
-                        id="middle"
-                        name="level"
-                        value="2"
-                        class="lvl-input"
-                        />
-                        <label for="middle">2</label>
-
-                        <input
-                        type="radio"
-                        id="advanced"
-                        name="level"
-                        value="3"
-                        class="lvl-input"
-                        />
-                        <label for="advanced">3</label>
-                    </div>
-                    <div class="start-game">
-                        <button class="start-game-button" type="submit">Старт</button>
-                    </div>
-                </form>
+<body>
+    <div class="game-container">
+        <div class="game-info-box">
+            <p class="game-info-text">Выбери сложность</p>
+            <div class="game-level-box">
+                <input type="radio" id="radio1" name="radios" value="1" checked>
+                <label for="radio1">1</label>
+                <input type="radio" id="radio2" name="radios" value="2">
+                <label for="radio2">2</label>
+                <input type="radio" id="radio3" name="radios" value="3">
+                <label for="radio3">3</label>
             </div>
+            <button class="game-info-btn">Старт</button>
         </div>
-    </body>
-    
+    </div>
+
     <script src="cardGame.js"></script>
+</body>
+
 </html>
