@@ -1,18 +1,17 @@
-const top_elem = document.querySelector(".top");
-const lvl = document.querySelectorAll(".lvl-input");
-const startButton = document.querySelector(".start-game-button");
-const menu = document.querySelector(".menu");
-const form = document.querySelector("form");
+const appEl = document.querySelector('.game-container');
+const gameInfoBtn = document.querySelector('.game-info-btn');
+const gameLevel = document.querySelectorAll('input');
 
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    top_elem.innerHTML = "";
-    top_elem.appendChild(gameHeader);
-    if (window.level === "1") {
-      console.log("1");
-    } else if (window.level === "2") {
-      console.log("2");
-    } else {
-      console.log("3");
+
+gameInfoBtn.addEventListener('click', function () {
+
+    for (let i = 0; i < gameLevel.length; i++) {
+
+        if (gameLevel[i].checked) {
+
+            appEl.innerHTML = `Здесь будет ${gameLevel[i].value} уровень`;
+
+            localStorage.setItem('level', `${gameLevel[i].value}`);
+        }
     }
-  });
+});
