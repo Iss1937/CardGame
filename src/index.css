@@ -3,7 +3,7 @@
 }
 
 @font-face {
-    font-family: StratosSkyeng;
+    font-family: StratosSkyeng, sans-serif;
     src: url("../fonts/stratosskyengweb-regular.woff") format("woff");
 }
 
@@ -30,7 +30,7 @@
     width: 208px;
     margin-top: 52px;
     color: #004980;
-    font-family: StratosSkyeng;
+    font-family: StratosSkyeng, sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
@@ -58,7 +58,7 @@ label {
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-family: StratosSkyeng;
+    font-family: StratosSkyeng, sans-serif;
     font-size: 64px;
     font-style: normal;
     font-weight: 400;
@@ -80,7 +80,7 @@ input[type="radio"]:checked + label {
     color: white;
     border: none;
     border-radius: 12px;
-    font-family: StratosSkyeng;
+    font-family: StratosSkyeng, sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -99,7 +99,7 @@ input[type="radio"]:checked + label {
 }
 
 .game-time-meta {
-    font-family: StratosSkyeng;
+    font-family: StratosSkyeng, sans-serif;
     color: white;
     font-size: 16px;
     font-style: normal;
@@ -109,7 +109,7 @@ input[type="radio"]:checked + label {
 }
 
 .game-time {
-    font-family: StratosSkyeng;
+    font-family: StratosSkyeng, sans-serif;
     color: white;
     font-size: 64px;
     font-style: normal;

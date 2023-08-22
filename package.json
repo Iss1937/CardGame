@@ -7,7 +7,9 @@
         "start": "http-server -p 5500",
         "format": "prettier --write ./cardGame",
         "lint:js": "eslint ./src/**/*.js",
-        "lint:css": "stylelint ./src/**/*.css"
+        "lint:css": "stylelint ./src/**/*.css",
+        "build": "NODE_ENV=production webpack",
+        "start": "webpack-dev-server --open"
     },
     "repository": {
         "type": "git",
@@ -36,6 +38,8 @@
         "prettier": "^3.0.1",
         "stylelint": "^15.10.3",
         "stylelint-config-standard": "^34.0.0",
-        "stylelint-prettier": "^4.0.2"
+        "stylelint-prettier": "^4.0.2",
+        "webpack-cli": "^5.1.4",
+        "webpack-dev-server": "^4.15.1"
     }
 }
