@@ -3,8 +3,8 @@
 }
 
 @font-face {
-    font-family: 'StratosSkyeng';
-    src: url(./fonts/stratosskyengweb-regular.woff) format('woff');
+    font-family: StratosSkyeng;
+    src: url("../fonts/stratosskyengweb-regular.woff") format("woff");
 }
 
 .game-container {
@@ -14,20 +14,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
-.game-info-box {
+.game-popup-box {
     width: 480px;
     height: 459px;
-    background-color: #C2F5FF;
+    background-color: #c2f5ff;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.game-info-text {
+.game-popup-text {
     width: 208px;
     margin-top: 52px;
     color: #004980;
@@ -49,15 +48,11 @@ input[type="radio"] {
     display: none;
 }
 
-input[type="radio"]:checked+label {
-    box-shadow: 1px 1px 5px #0080C1;
-}
-
 label {
     width: 98px;
     height: 98px;
-    background-color: #ffffff;
-    color: #0080C1;
+    background-color: #fff;
+    color: #0080c1;
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -73,10 +68,16 @@ label:hover {
     box-shadow: 1px 1px 5px #0081c152;
 }
 
-.game-info-btn {
+input[type="radio"]:checked + label {
+    box-shadow: 1px 1px 5px #0080c1;
+}
+
+.game-btn {
     width: 246px;
     height: 50px;
-    background-color: #7AC100;
+    cursor: pointer;
+    background-color: #7ac100;
+    color: white;
     border: none;
     border-radius: 12px;
     font-family: StratosSkyeng;
@@ -84,6 +85,51 @@ label:hover {
     font-style: normal;
     font-weight: 400;
 }
-.game-info-btn:hover{
-    color: red;
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 91px;
+    margin-bottom: 35px;
+}
+
+.game-info-timer {
+    width: 155px;
+}
+
+.game-time-meta {
+    font-family: StratosSkyeng;
+    color: white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-around;
+}
+
+.game-time {
+    font-family: StratosSkyeng;
+    color: white;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.game-card-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    width: 645px;
+}
+
+.game-card {
+    height: 133px;
+    width: 95px;
+    background-image: url("../img/card.svg");
+}
+
+.hidden {
+    display: none;
 }
