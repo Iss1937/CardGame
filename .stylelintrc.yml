@@ -5,13 +5,8 @@ extends:
         "stylelint-prettier/recommended",
     ]
 rules:
-   {
-     "prettier/prettier": true,
-     "font-family-no-missing-generic-family-keyword":
-       [true, { "ignoreFontFamilies": ["StratosSkyeng"] }],
-   }
-
-
-
-
-   
+    {
+        "prettier/prettier": true,
+        "font-family-no-missing-generic-family-keyword":
+            [true, { "ignoreFontFamilies": ["StratosSkyeng"] }],
+    }
