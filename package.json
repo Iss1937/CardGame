@@ -25,6 +25,7 @@
     "keywords": [],
     "description": "",
     "dependencies": {
+        "@testing-library/jest-dom": "^6.1.3",
         "http-server": "^14.1.1",
         "lodash": "^4.17.21"
     },
