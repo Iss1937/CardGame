@@ -1,1 +1,4 @@
 node_modules/
+dist/
+src/scss/style.css
+src/scss/style.css.map
